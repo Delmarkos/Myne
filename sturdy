@@ -1,1 +1,25 @@
 
+public class Student {
+    
+    public Student() 
+    {
+ 
+        // A student is enrolled by default
+        IsEnrolled = true;
+        
+    }
+    
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public byte Age { get; set; }
+    public bool IsEnrolled { get; set; }
+    
+}
+    
+// Create a new Student object and assign it to the variable name `s`
+var s = new Student();
+s.FirstName = "Joe";
+s.LastName = "Bag O'Donuts";
+s.Age = 30;
+
+display(s)
